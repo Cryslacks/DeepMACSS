@@ -1,0 +1,4 @@
+*.pt
+temp/
+datasets/
+dataset_mAP/
