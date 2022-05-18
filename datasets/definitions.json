@@ -1,0 +1,69 @@
+{
+	"components":{
+		"Header":{
+			"hasText":"required",
+			"hasReference":false,
+			"similarity":[]
+		},
+		"Input":{
+			"hasText":false,
+			"hasReference":"optional",
+			"similarity":["Button", "Dropdown", "Combobox"]
+		},
+		"Button":{
+			"hasText":"required",
+			"hasReference":"optional",
+			"similarity":["Combobox", "Input", "Dropdown"]
+		},
+		"List":{
+			"hasText":false,
+			"hasReference":false,
+			"similarity":["Datagrid"]
+		},
+		"Datagrid":{
+			"hasText":false,
+			"hasReference":false,
+			"similarity":["List"]
+		},
+		"Dropdown":{
+			"hasText":false,
+			"hasReference":"optional",
+			"similarity":["Combobox", "Input", "Button"]
+		},
+		"Combobox":{
+			"hasText":false,
+			"hasReference":"optional",
+			"similarity":["Button", "Input", "Dropdown"]
+		},
+		"Checkbox":{
+			"hasText":"required",
+			"hasReference":false,
+			"similarity":["ReferenceHead"]
+		},
+		"Radiobutton":{
+			"hasText":"required",
+			"hasReference":false,
+			"similarity":[]
+		},
+		"Reference":{
+			"hasText":false,
+			"hasReference":false,
+			"similarity":[]
+		},
+		"Object":{
+			"hasText":"required",
+			"hasReference":false,
+			"similarity":[]
+		},
+		"ReferenceHead":{
+			"hasText":false,
+			"hasReference":false,
+			"similarity":[]
+		},
+		"Paragraph":{
+			"hasText":"required",
+			"hasReference":false,
+			"similarity":["Button", "Header", "Object", "Checkbox", "Radiobutton"]
+		}
+	}
+}
