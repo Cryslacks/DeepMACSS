@@ -14,6 +14,24 @@ In order to install the dependencies of DeepMACSS you need to run the following 
 pip install -r requirement.txt
 ```
 
+## Data from the paper
+The models used and datasets used are located at [this drive.](https://drive.google.com/drive/folders/1WAjuYzrVk1wzmpTcLgdMDlhr9MTBgxTZ?usp=sharing)
+
+### Datasets
+There are five datasets present in the drive folder:
+* combined, consists of 6250 artificially combined images of the original 13 components.
+* combined2semantic, consists of 15 hand drawn images with semantics for each image.
+* image, consists of 540 artificially combined images containing a new component Image and the 13 original components.
+* mAP, consists of 79 hand drawn images used for the mAP test of the system.
+* singular, consists of 1646 hand drawn images with all the unique components each seperatly.
+
+These datasets should be placed in `./datasets/` in order to keep the system clean but can be placed anywhere.
+
+### Models
+The models are divided into dates and names. In order to utilize these the models present in the drive shall be placed in `./models/` and can be used in the system. The noteable models which performed best were:
+* `Mar-09_13-47` with `All-Comp_v9_SGD-StepLR_pre-10`, which is the network performing best which was trained on the huge 6250 image dataset.
+* `Apr-11_10-43` with `Image-Retrain_v9_SGD-StepLR-9`, which is the network containing a newly trained 14th component 'Image'.
+
 ## Usage
 There are multiple python modules provided in order to utilize the DeepMACSS system's full potential. These modules are called: `dataset.py`, `ai_model.py` and `codegen.py`.
 Each of these modules provides a unique part of the DeepMACSS system, ranging from auto-labelling data to generating code from a semantic.
