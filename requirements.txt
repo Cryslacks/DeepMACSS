@@ -1,0 +1,8 @@
+torch
+torchvision
+torchaudio
+opencv-python
+tensorboard
+matplotlib
+easyocr
+pyspellchecker

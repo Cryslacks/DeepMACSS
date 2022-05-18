@@ -1,4 +1,4 @@
 *.pt
+models/*
 temp/
-datasets/
-dataset_mAP/
+datasets
